@@ -6,7 +6,9 @@ defmodule AOC.MixProject do
       app: :my_app,
       version: "0.0.1",
       elixir: "~> 1.14",
-      deps: deps()
+      elixirc_paths: ["lib"],
+      deps: deps(),
+      default_task: "Day01.part1"
     ]
   end
 

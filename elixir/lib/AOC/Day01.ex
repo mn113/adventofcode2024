@@ -7,12 +7,12 @@ defmodule AOC.Day01 do
 
   # Convert lines to integer lists
   defp to_integer_lists_by_column(input) do
-    lines = input
-    |> Enum.map(fn line ->
+    lines =
+      Enum.map(input, fn line ->
         Regex.run(~r/^(\d+)\D+(\d+)$/, String.trim(line))
         |> Enum.drop(1)
         |> Enum.map(&String.to_integer/1)
-    end)
+      end)
 
     col1 = Enum.map(lines, fn [a, _] -> a end)
     col2 = Enum.map(lines, fn [_, b] -> b end)
@@ -24,9 +24,10 @@ defmodule AOC.Day01 do
   """
   def part1 do
     [col1, col2] = to_integer_lists_by_column(read_input())
+
     Enum.zip(Enum.sort(col1), Enum.sort(col2))
     |> Enum.map(fn {a, b} -> abs(a - b) end)
-    |> Enum.sum
+    |> Enum.sum()
     |> IO.inspect(label: "P1")
   end
 
@@ -35,9 +36,10 @@ defmodule AOC.Day01 do
   """
   def part2 do
     [col1, col2] = to_integer_lists_by_column(read_input())
+
     col1
     |> Enum.map(fn a -> a * Enum.count(col2, fn b -> b == a end) end)
-    |> Enum.sum
+    |> Enum.sum()
     |> IO.inspect(label: "P2")
   end
 end

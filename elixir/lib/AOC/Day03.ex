@@ -15,9 +15,14 @@ defmodule AOC.Day03 do
     Regex.scan(~r/(do\(\))|(don't\(\))|(mul\((\d{1,3}),(\d{1,3})\))/, line)
     |> Enum.map(fn [head | tail] ->
       cond do
-        String.match?(head, ~r/mul/) -> [@count, String.to_integer(Enum.at(tail, 3)), String.to_integer(Enum.at(tail, 4))]
-        String.match?(head, ~r/don't\(\)/) -> [@nocount, @turnoff, @nocount]
-        String.match?(head, ~r/do\(\)/) -> [@nocount, @turnon, @nocount]
+        String.match?(head, ~r/mul/) ->
+          [@count, String.to_integer(Enum.at(tail, 3)), String.to_integer(Enum.at(tail, 4))]
+
+        String.match?(head, ~r/don't\(\)/) ->
+          [@nocount, @turnoff, @nocount]
+
+        String.match?(head, ~r/do\(\)/) ->
+          [@nocount, @turnon, @nocount]
       end
     end)
   end
@@ -28,10 +33,10 @@ defmodule AOC.Day03 do
   def part1 do
     read_input()
     |> re_parse
-    |> Enum.map(fn parts -> parts
-      |> Enum.reduce(fn x, acc -> x * acc end)
+    |> Enum.map(fn parts ->
+      Enum.reduce(parts, fn x, acc -> x * acc end)
     end)
-    |> Enum.sum
+    |> Enum.sum()
     |> IO.inspect(label: "P1")
   end
 
@@ -47,7 +52,7 @@ defmodule AOC.Day03 do
       cond do
         a == @nocount && b == @turnoff -> Map.update!(acc, :counting, fn _ -> false end)
         a == @nocount && b == @turnon -> Map.update!(acc, :counting, fn _ -> true end)
-        a == @count && acc.counting -> Map.update!(acc, :value, fn _ -> acc.value + (b * c) end)
+        a == @count && acc.counting -> Map.update!(acc, :value, fn _ -> acc.value + b * c end)
         a == @count && !acc.counting -> acc
       end
     end)

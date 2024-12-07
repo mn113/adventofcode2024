@@ -17,11 +17,13 @@ defmodule AOC.Day02 do
     if !looks_increasing and !looks_decreasing do
       false
     else
-      checks = for {a, b} <- Enum.zip(line, Enum.drop(line, 1)) do
-        if looks_decreasing,
-        do: a - b >=1 and a - b <= 3,
-        else: b - a >=1 and b - a <= 3
-      end
+      checks =
+        for {a, b} <- Enum.zip(line, Enum.drop(line, 1)) do
+          if looks_decreasing,
+            do: a - b >= 1 and a - b <= 3,
+            else: b - a >= 1 and b - a <= 3
+        end
+
       Enum.all?(checks)
     end
   end
@@ -29,8 +31,9 @@ defmodule AOC.Day02 do
   # Get line variants with a single step removed
   defp get_variants(line) do
     n = length(line)
-    for i <- 0..(n-1) do
-      Enum.take(line, i) ++ Enum.drop(line, i+1)
+
+    for i <- 0..(n - 1) do
+      Enum.take(line, i) ++ Enum.drop(line, i + 1)
     end
   end
 
@@ -40,7 +43,7 @@ defmodule AOC.Day02 do
   def part1 do
     read_input()
     |> Enum.filter(&is_safe/1)
-    |> Enum.count
+    |> Enum.count()
     |> IO.inspect(label: "P1")
   end
 
@@ -51,7 +54,7 @@ defmodule AOC.Day02 do
     read_input()
     |> Enum.map(&get_variants/1)
     |> Enum.filter(fn variants -> Enum.any?(variants, &is_safe/1) end)
-    |> Enum.count
+    |> Enum.count()
     |> IO.inspect(label: "P2")
   end
 end

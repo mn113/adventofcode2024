@@ -29,9 +29,11 @@ defmodule AOC.Day07 do
   # compute the productsum of the values using the chosen operators
   defp compute(values, operators, target) do
     [first | rest] = values
+
     0..(length(operators) - 1)
     |> Enum.reduce_while(first, fn i, acc ->
       new_acc = compute_step(acc, Enum.at(operators, i), Enum.at(rest, i))
+
       if new_acc > target,
         do: {:halt, 0},
         else: {:cont, new_acc}
@@ -43,16 +45,22 @@ defmodule AOC.Day07 do
     [target, values] = line
     # 2 operarors in play
     operator_selections = selections([:add, :mul], length(values) - 1)
-    solvable_with_2 = Enum.any?(operator_selections, fn ops ->
-      compute(values, ops, target) == target
-    end)
-    # 3 operarors in play - much slower
-    solvable_with_3 = if !solvable_with_2 && use_concat do
-      operator_selections2 = selections([:add, :mul, :concat], length(values) - 1)
-      Enum.any?(operator_selections2, fn ops ->
+
+    solvable_with_2 =
+      Enum.any?(operator_selections, fn ops ->
         compute(values, ops, target) == target
       end)
-    end
+
+    # 3 operarors in play - much slower
+    solvable_with_3 =
+      if !solvable_with_2 && use_concat do
+        operator_selections2 = selections([:add, :mul, :concat], length(values) - 1)
+
+        Enum.any?(operator_selections2, fn ops ->
+          compute(values, ops, target) == target
+        end)
+      end
+
     if solvable_with_2 || solvable_with_3, do: target, else: 0
   end
 
@@ -61,8 +69,8 @@ defmodule AOC.Day07 do
   """
   def part1 do
     read_input()
-    |> Enum.map(&(try_solve(&1, false)))
-    |> Enum.sum
+    |> Enum.map(&try_solve(&1, false))
+    |> Enum.sum()
     |> IO.inspect(label: "P1")
   end
 
@@ -71,8 +79,8 @@ defmodule AOC.Day07 do
   """
   def part2 do
     read_input()
-    |> Enum.map(&(try_solve(&1, true)))
-    |> Enum.sum
+    |> Enum.map(&try_solve(&1, true))
+    |> Enum.sum()
     |> IO.inspect(label: "P2")
   end
 end

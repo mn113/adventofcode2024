@@ -32,8 +32,7 @@ Compile and run a solution
 
 ```sh
 cd elixir
-iex -S mix
-AOC.Day01.part1
+mix runner 1
 ```
 
 
