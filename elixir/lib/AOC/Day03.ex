@@ -1,4 +1,4 @@
-defmodule Day03 do
+defmodule AOC.Day03 do
   @count 1
   @nocount 0
   @turnon 1

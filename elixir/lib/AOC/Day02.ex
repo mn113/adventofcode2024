@@ -1,4 +1,4 @@
-defmodule Day02 do
+defmodule AOC.Day02 do
   # Read input as lines
   defp read_input do
     File.read!(Path.expand("../inputs/input02.txt"))

@@ -1,4 +1,4 @@
-defmodule Day01 do
+defmodule AOC.Day01 do
   # Read input as lines
   defp read_input do
     File.read!(Path.expand("../inputs/input01.txt"))
@@ -37,7 +37,6 @@ defmodule Day01 do
     [col1, col2] = to_integer_lists_by_column(read_input())
     col1
     |> Enum.map(fn a -> a * Enum.count(col2, fn b -> b == a end) end)
-    |> IO.inspect()
     |> Enum.sum
     |> IO.inspect(label: "P2")
   end
