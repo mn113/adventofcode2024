@@ -1,0 +1,4 @@
+*.log
+.vscode/
+elixir/_build/
+elixir/deps/
