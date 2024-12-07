@@ -1,16 +1,18 @@
 # Advent of Code 2024
 
-![](https://img.shields.io/badge/days%20completed-05-red) ![](https://img.shields.io/badge/stars%20⭐-10-yellow)
+![](https://img.shields.io/badge/days%20completed-07-red) ![](https://img.shields.io/badge/stars%20⭐-14-yellow)
 
 https://adventofcode.com/2024
 
 | Puzzle | Difficulty | Fun | Completion | Python | Ruby | Elixir | PHP | JS | other |
 |--------|------------|-----|------------|:------:|:----:|:------:|:---:|:--:|:-----:|
-| [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) | 1 | 2 | :star: :star: | - | - | :heart_decoration: **[01.exs](elixir/01.exs)** | - | - | - |
-| [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2) | 2 | 2 | :star: :star: | - | - | :heart_decoration: **[02.exs](elixir/02.exs)** | - | - | - |
-| [Day 3: Mull It Over](https://adventofcode.com/2024/day/3) | 3 | 2 | :star: :star: | - | - | :heart_decoration: **[03.exs](elixir/03.exs)** | - | - | - |
+| [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) | 1 | 2 | :star: :star: | - | - | :heart_decoration: **[01.ex](elixir/01.ex)** | - | - | - |
+| [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2) | 2 | 2 | :star: :star: | - | - | :heart_decoration: **[02.ex](elixir/02.ex)** | - | - | - |
+| [Day 3: Mull It Over](https://adventofcode.com/2024/day/3) | 3 | 2 | :star: :star: | - | - | :heart_decoration: **[03.ex](elixir/03.ex)** | - | - | - |
 | [Day 4: Ceres Search](https://adventofcode.com/2024/day/4) | 1 | 3 | :star: :star: | :snake: **[04.py](python/04.py)** | - | - | - | - | :registered: [04.rs](rust/04.rs) |
 | [Day 5: Print Queue](https://adventofcode.com/2024/day/5) | 3 | 2 | :star: :star: | :snake: **[05.py](python/05.py)** | - | - | - | - | - |
+| [Day 6: Guard Gallivant](https://adventofcode.com/2024/day/6) | 3 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[06.js](js/06.js)** | - |
+| [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7) | 2 | 3 | :star: :star: | - | - | :heart_decoration: **[07.ex](elixir/07.ex)** | - | - | - |
 
 _**Bold** = primary language for that day (others are ports)_
 
@@ -18,12 +20,22 @@ _**Bold** = primary language for that day (others are ports)_
 
 > Elixir Version: 1.14
 
-Run a solution
+Install
 
 ```sh
 cd elixir
-elixir -r 01.exs -e Day01.part1
+mix install
+mix deps.get
 ```
+
+Compile and run a solution
+
+```sh
+cd elixir
+iex -S mix
+AOC.Day01.part1
+```
+
 
 ## Python
 
