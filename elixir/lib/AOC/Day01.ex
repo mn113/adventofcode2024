@@ -20,7 +20,7 @@ defmodule AOC.Day01 do
   end
 
   @doc """
-  Sort 2 lists ascending, find diff between each number pir, sum them.
+  Sort 2 lists ascending, find diff between each number pair, sum them.
   """
   def part1 do
     [col1, col2] = to_integer_lists_by_column(read_input())

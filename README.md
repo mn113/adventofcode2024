@@ -6,7 +6,7 @@ https://adventofcode.com/2024
 
 | Puzzle | Difficulty | Fun | Completion | Python | Ruby | Elixir | PHP | JS | other |
 |--------|------------|-----|------------|:------:|:----:|:------:|:---:|:--:|:-----:|
-| [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) | 1 | 2 | :star: :star: | - | - | :heart_decoration: **[01.ex](elixir/01.ex)** | - | - | - |
+| [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) | 1 | 2 | :star: :star: | - | - | :heart_decoration: **[01.ex](elixir/01.ex)** | - | - | :registered: [01.rs](rust/01.rs) |
 | [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2) | 2 | 2 | :star: :star: | - | - | :heart_decoration: **[02.ex](elixir/02.ex)** | - | - | - |
 | [Day 3: Mull It Over](https://adventofcode.com/2024/day/3) | 3 | 2 | :star: :star: | - | - | :heart_decoration: **[03.ex](elixir/03.ex)** | - | - | - |
 | [Day 4: Ceres Search](https://adventofcode.com/2024/day/4) | 1 | 3 | :star: :star: | :snake: **[04.py](python/04.py)** | - | - | - | - | :registered: [04.rs](rust/04.rs) |
