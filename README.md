@@ -14,6 +14,7 @@ https://adventofcode.com/2024
 | [Day 6: Guard Gallivant](https://adventofcode.com/2024/day/6) | 3 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[06.js](js/06.js)** | - |
 | [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7) | 2 | 3 | :star: :star: | - | - | :heart_decoration: **[07.ex](elixir/07.ex)** | - | - | - |
 | [Day 8: Resonant Collinearity](https://adventofcode.com/2024/day/8) | 1 | 2 | :star: :star: | :snake: **[08.py](python/08.py)** | - | - | - | - | :registered: [08.rs](rust/08.rs) |
+| [Day 9: Disk Fragmenter](https://adventofcode.com/2024/day/9) | 4 | 2 | :star: :star: | :snake: **[09.py](python/09.py)** | - | - | - | - | - |
 
 _**Bold** = primary language for that day (others are ports)_
 
