@@ -1,6 +1,6 @@
 # Advent of Code 2024
 
-![](https://img.shields.io/badge/days%20completed-08-red) ![](https://img.shields.io/badge/stars%20⭐-16-yellow)
+![](https://img.shields.io/badge/days%20completed-10-red) ![](https://img.shields.io/badge/stars%20⭐-20-yellow)
 
 https://adventofcode.com/2024
 
@@ -15,6 +15,7 @@ https://adventofcode.com/2024
 | [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7) | 2 | 3 | :star: :star: | - | - | :heart_decoration: **[07.ex](elixir/07.ex)** | - | - | - |
 | [Day 8: Resonant Collinearity](https://adventofcode.com/2024/day/8) | 1 | 2 | :star: :star: | :snake: **[08.py](python/08.py)** | - | - | - | - | :registered: [08.rs](rust/08.rs) |
 | [Day 9: Disk Fragmenter](https://adventofcode.com/2024/day/9) | 4 | 2 | :star: :star: | :snake: **[09.py](python/09.py)** | - | - | - | - | - |
+| [Day 10: Hoof It](https://adventofcode.com/2024/day/10) | 2 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[10.js](js/10.js)** | - |
 
 _**Bold** = primary language for that day (others are ports)_
 
