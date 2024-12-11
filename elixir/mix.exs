@@ -20,7 +20,8 @@ defmodule AOC.MixProject do
 
   defp deps do
     [
-      {:comb, git: "https://github.com/tallakt/comb.git", tag: "master"}
+      {:comb, git: "https://github.com/tallakt/comb.git", tag: "master"},
+      {:memoize, "~> 1.4"}
     ]
   end
 end
