@@ -88,7 +88,7 @@ fn solve(grid: Vec<Vec<char>>, nodes_by_char: HashMap<char, Vec<(i32, i32)>>, mi
 
 
 fn main() {
-    let grid = prep_grid(read_lines("../inputs/input08.txt"));
+    let grid = prep_grid(read_lines("../../inputs/input08.txt"));
     let nodes_by_char = fill_nodes_by_char(grid.clone());
     println!("P1: {}", solve(grid.clone(), nodes_by_char.clone(), 1, 2));
     println!("P2: {}", solve(grid.clone(), nodes_by_char.clone(), 0, 50));

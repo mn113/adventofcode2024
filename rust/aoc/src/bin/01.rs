@@ -48,7 +48,7 @@ fn part2(col1: Vec<u32>, col2: Vec<u32>) -> i32 {
 }
 
 fn main() {
-    let (col1, col2) = to_columns(read_lines("../inputs/input01.txt"));
+    let (col1, col2) = to_columns(read_lines("../../inputs/input01.txt"));
     println!("P1: {}", part1(col1.clone(), col2.clone()));
     println!("P2: {}", part2(col1.clone(), col2.clone()));
 }

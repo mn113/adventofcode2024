@@ -2,8 +2,6 @@
 
 require 'matrix'
 
-@max_A_presses = 101
-@max_B_presses = 100
 @A_press_cost = 3
 @B_press_cost = 1
 
@@ -72,7 +70,7 @@ def solve_matrix(game, stupid_factor = 0, presses_limit = 100)
     if (a_presses == a_presses.to_i and b_presses == b_presses.to_i and
         0 <= a_presses and a_presses <= presses_limit and
         0 <= b_presses and b_presses <= presses_limit)
-        #p "#{a_presses} A presses and #{b_presses} B presses wins"
+        p "#{a_presses} A presses and #{b_presses} B presses wins"
         return a_presses.to_i * @A_press_cost + b_presses.to_i * @B_press_cost
     else
         return 0
@@ -81,9 +79,10 @@ end
 
 @stupid_factor = 10_000_000_000_000
 
-p "#{read_input().length} games parsed"
-p "Part 1: #{read_input().map{ |g| solve_matrix(g) }.sum}"
-p "Part 2: #{read_input().map{ |g| solve_matrix(g, @stupid_factor, @stupid_factor) }.sum}"
+games = read_input()
+p "#{games.length} games parsed"
+p "Part 1: #{games.map{ |g| solve_matrix(g) }.sum}"
+p "Part 2: #{games.map{ |g| solve_matrix(g, @stupid_factor, @stupid_factor) }.sum}"
 
 # P1: 35082
 # P2: 82570698600470

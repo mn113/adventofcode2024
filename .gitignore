@@ -2,3 +2,4 @@
 .vscode/
 elixir/_build/
 elixir/deps/
+rust/**/target/

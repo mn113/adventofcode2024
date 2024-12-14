@@ -18,7 +18,7 @@ https://adventofcode.com/2024
 | [Day 10: Hoof It](https://adventofcode.com/2024/day/10) | 2 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[10.js](js/10.js)** | - |
 | [Day 11: Plutonian Pebbles](https://adventofcode.com/2024/day/11) | 3 | 3 | :star: :star: | - | - | :heart_decoration: **[11.ex](elixir/11.ex)** | - | - | - |
 | [Day 12: Garden Groups](https://adventofcode.com/2024/day/12) | 4 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[12.js](js/12.js)** | - |
-| [Day 13: Claw Contraption](https://adventofcode.com/2024/day/13) | 3 | 3 | :star: :star: | - | **:rotating_light: [13.rb](ruby/13.rb)** | - | - | - | - |
+| [Day 13: Claw Contraption](https://adventofcode.com/2024/day/13) | 3 | 3 | :star: :star: | - | **:rotating_light: [13.rb](ruby/13.rb)** | - | - | - | :registered: [13.rs](rust/13.rs) |
 | [Day 14: Restroom Redoubt](https://adventofcode.com/2024/day/14) | 2 | 2 | :star: :star: | :snake: **[14.py](python/14.py)** | - | - | - | - | - |
 
 _**Bold** = primary language for that day (others are ports)_
@@ -83,9 +83,8 @@ node 07.js
 Run a solution
 
 ```sh
-cd rust
-rustc 04.rs
-./04
+cd rust/aoc
+cargo run --bin 01
 ```
 
 ## TODO

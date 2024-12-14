@@ -98,7 +98,7 @@ fn part2(grid: Vec<Vec<char>>) -> i32 {
 }
 
 fn main() {
-    let grid = prep_grid(read_lines("../inputs/input04.txt"));
+    let grid = prep_grid(read_lines("../../inputs/input04.txt"));
     println!("P1: {}", part1(grid.clone()));
     println!("P2: {}", part2(grid.clone()));
 }
