@@ -1,6 +1,6 @@
 # Advent of Code 2024
 
-![](https://img.shields.io/badge/days%20completed-13-red) ![](https://img.shields.io/badge/stars%20⭐-26-yellow)
+![](https://img.shields.io/badge/days%20completed-14-red) ![](https://img.shields.io/badge/stars%20⭐-28-yellow)
 
 https://adventofcode.com/2024
 
@@ -19,6 +19,7 @@ https://adventofcode.com/2024
 | [Day 11: Plutonian Pebbles](https://adventofcode.com/2024/day/11) | 3 | 3 | :star: :star: | - | - | :heart_decoration: **[11.ex](elixir/11.ex)** | - | - | - |
 | [Day 12: Garden Groups](https://adventofcode.com/2024/day/12) | 4 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[12.js](js/12.js)** | - |
 | [Day 13: Claw Contraption](https://adventofcode.com/2024/day/13) | 3 | 3 | :star: :star: | - | **:rotating_light: [13.rb](ruby/13.rb)** | - | - | - | - |
+| [Day 14: Restroom Redoubt](https://adventofcode.com/2024/day/14) | 2 | 2 | :star: :star: | :snake: **[14.py](python/14.py)** | - | - | - | - | - |
 
 _**Bold** = primary language for that day (others are ports)_
 
