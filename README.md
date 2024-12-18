@@ -1,6 +1,6 @@
 # Advent of Code 2024
 
-![](https://img.shields.io/badge/days%20completed-15-red) ![](https://img.shields.io/badge/stars%20⭐-31-yellow)
+![](https://img.shields.io/badge/days%20completed-16-red) ![](https://img.shields.io/badge/stars%20⭐-33-yellow)
 
 https://adventofcode.com/2024
 
@@ -23,6 +23,7 @@ https://adventofcode.com/2024
 | [Day 15: Warehouse Woes](https://adventofcode.com/2024/day/15) | 4 | 3 | :star: :star: | - |  **:rotating_light: [15.rb](ruby/15.rb)** | - | - | - | - |
 | [Day 16: Reindeer Maze](https://adventofcode.com/2024/day/16) |  |  |  | - |  - | - | - | - | - |
 | [Day 17: Chronospatial Computer](https://adventofcode.com/2024/day/17) | 4 | 3 | :star: | - |  - | :heart_decoration: **[17.ex](elixir/17.ex)** | - | - | - |
+| [Day 18: RAM Run](https://adventofcode.com/2024/day/18) | 2 | 3 | :star: :star: | :snake: **[18.py](python/18.py)** |  - | - | - | - | - |
 
 _**Bold** = primary language for that day (others are ports)_
 
