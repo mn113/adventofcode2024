@@ -1,6 +1,6 @@
 # Advent of Code 2024
 
-![](https://img.shields.io/badge/days%20completed-15-red) ![](https://img.shields.io/badge/stars%20⭐-30-yellow)
+![](https://img.shields.io/badge/days%20completed-15-red) ![](https://img.shields.io/badge/stars%20⭐-31-yellow)
 
 https://adventofcode.com/2024
 
@@ -21,6 +21,8 @@ https://adventofcode.com/2024
 | [Day 13: Claw Contraption](https://adventofcode.com/2024/day/13) | 3 | 3 | :star: :star: | - | **:rotating_light: [13.rb](ruby/13.rb)** | - | - | - | :registered: [13.rs](rust/13.rs) |
 | [Day 14: Restroom Redoubt](https://adventofcode.com/2024/day/14) | 2 | 2 | :star: :star: | :snake: **[14.py](python/14.py)** | - | - | - | - | - |
 | [Day 15: Warehouse Woes](https://adventofcode.com/2024/day/15) | 4 | 3 | :star: :star: | - |  **:rotating_light: [15.rb](ruby/15.rb)** | - | - | - | - |
+| [Day 16: Reindeer Maze](https://adventofcode.com/2024/day/16) |  |  |  | - |  - | - | - | - | - |
+| [Day 17: Chronospatial Computer](https://adventofcode.com/2024/day/17) | 4 | 3 | :star: | - |  - | :heart_decoration: **[17.ex](elixir/17.ex)** | - | - | - |
 
 _**Bold** = primary language for that day (others are ports)_
 

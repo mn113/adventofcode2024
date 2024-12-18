@@ -21,9 +21,9 @@ defmodule Mix.Tasks.Runner do
         Application.ensure_all_started(:memoize)
         AOC.Day11.part1()
         AOC.Day11.part2()
-      "14" ->
-        AOC.Day14.part1()
-        AOC.Day14.part2()
+      "17" ->
+        AOC.Day17.part1()
+        AOC.Day17.part2()
       _ ->
         IO.puts "Day #{day} not implemented in runner.ex."
     end
