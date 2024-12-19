@@ -24,6 +24,7 @@ https://adventofcode.com/2024
 | [Day 16: Reindeer Maze](https://adventofcode.com/2024/day/16) |  |  |  | - |  - | - | - | - | - |
 | [Day 17: Chronospatial Computer](https://adventofcode.com/2024/day/17) | 4 | 3 | :star: | - |  - | :heart_decoration: **[17.ex](elixir/17.ex)** | - | - | - |
 | [Day 18: RAM Run](https://adventofcode.com/2024/day/18) | 2 | 3 | :star: :star: | :snake: **[18.py](python/18.py)** |  - | - | - | - | - |
+| [Day 19: Linen Layout](https://adventofcode.com/2024/day/19) | 3 | 3 | :star: :star: | :snake: **[19.py](python/19.py)** |  - | - | - | - | - |
 
 _**Bold** = primary language for that day (others are ports)_
 
