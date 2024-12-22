@@ -24,6 +24,9 @@ defmodule Mix.Tasks.Runner do
       "17" ->
         AOC.Day17.part1()
         AOC.Day17.part2()
+      "22" ->
+        AOC.Day22.part1()
+        AOC.Day22.part2()
       _ ->
         IO.puts "Day #{day} not implemented in runner.ex."
     end
