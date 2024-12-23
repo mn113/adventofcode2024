@@ -1,0 +1,15 @@
+strict graph {
+bk [fontsize="30pt"]
+zs -- {bk dx kd uz os fo dc yk gx ai  hk xn}
+bk -- {zs fo dc  yk os dx kd uz ai xn hk gx}
+dc -- { yk hk bk os kd fo xn dx zs uz gx ai}
+fo -- { bk gx ai zs dc yk uz kd xn dx hk os}
+yk -- {dc kd dx ai bk os fo hk uz gx  zs xn}
+uz -- { os zs xn dc kd yk dx fo hk bk gx ai}
+hk -- {dc  dx kd xn os yk uz ai fo zs bk gx}
+dx -- { hk zs gx yk kd dc os uz bk ai fo xn}
+ai -- { gx kd yk xn fo os dx hk bk zs uz dc}
+gx -- {fo ai dx  os yk dc kd zs xn uz bk hk}
+kd -- {yk ai zs hk  dc os dx xn uz fo bk gx}
+os -- {uz  bk yk dc zs kd hk gx dx ai xn fo}
+xn -- {hk ai uz dc kd fo yk gx  os dx bk zs}}
