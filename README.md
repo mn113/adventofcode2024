@@ -1,6 +1,6 @@
 # Advent of Code 2024
 
-![](https://img.shields.io/badge/days%20completed-21-red) ![](https://img.shields.io/badge/stars%20⭐-45-yellow)
+![](https://img.shields.io/badge/days%20completed-22-red) ![](https://img.shields.io/badge/stars%20⭐-46-yellow)
 
 https://adventofcode.com/2024
 
@@ -30,6 +30,7 @@ https://adventofcode.com/2024
 | [Day 22: Monkey Market](https://adventofcode.com/2024/day/22) | 4 | 4 | :star: :star: | - | - | :heart_decoration: **[22.ex](elixir/22.ex)** | - | - | - |
 | [Day 23: LAN Party](https://adventofcode.com/2024/day/23) | 4 | 3 | :star: :star: | - | :rotating_light: **[23.rb](ruby/23.rb)** | -| - | - | - |
 | [Day 24: Crossed Wires](https://adventofcode.com/2024/day/24) | 4 | 5 | :star: :star: | - | - | -| - | :jack_o_lantern: **[24.js](js/24.js)** | - |
+| [Day 25: Code Chronicle](https://adventofcode.com/2024/day/25) | 1 | 3 | :star: | :snake: **[25.py](python/25.py)** | - | - | - | - | - |
 
 _**Bold** = primary language for that day (others are ports)_
 
