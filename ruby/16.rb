@@ -5,6 +5,9 @@ require 'set'
 
 STEP_COST = 1
 TURN_COST = 1000
+STEP_SYM = "0"
+STEP_SYM_COLOURED = "\033[31;42m#{STEP_SYM}\033[0m"
+EXTRA_SYM_COLOURED = "\033[32;41m#{STEP_SYM}\033[0m"
 
 WALL = "#"
 DEADEND = "/"
@@ -120,16 +123,97 @@ def bfs(start, goal)
 end
 
 def traceback(goal, came_from)
-    # p "Traceback from goal #{goal}"
+    @maze[goal[0]][goal[1]] = STEP_SYM_COLOURED
     parent = came_from[goal]
+    steps = 1
     until parent.nil? do
-        @maze[parent[0]][parent[1]] = '0'
+        @maze[parent[0]][parent[1]] = STEP_SYM_COLOURED
         parent = came_from[parent]
+        steps += 1
     end
+    p "Traceback from goal #{goal} has #{steps} steps" # 469
 end
 
+# P1: Find cost of lowest cost route through the maze
 lowest_cost = bfs(@start, @end)
+
+@extras = 0
+def extra_step(y, x)
+    @maze[y][x] = EXTRA_SYM_COLOURED
+    @extras += 1
+end
+
+# P2: Add nodes to count which are on a lowest cost route (by visual inspection of output)
+extra_step(134, 61)
+extra_step(134, 63)
+extra_step(134, 69)
+extra_step(135, 61)
+extra_step(135, 63)
+extra_step(135, 69)
+extra_step(136, 61)
+extra_step(136, 63)
+extra_step(136, 69)
+extra_step(137, 61)
+extra_step(137, 62)
+extra_step(137, 63)
+extra_step(137, 64)
+extra_step(137, 65)
+extra_step(137, 66)
+extra_step(137, 67)
+extra_step(137, 68)
+extra_step(137, 69)
+extra_step(137, 70)
+
+extra_step(133, 72)
+extra_step(133, 73)
+extra_step(133, 74)
+extra_step(133, 75)
+extra_step(132, 75)
+extra_step(131, 75)
+extra_step(131, 76)
+extra_step(131, 77)
+extra_step(131, 78)
+extra_step(131, 79)
+extra_step(132, 79)
+extra_step(133, 79)
+extra_step(133, 80)
+extra_step(133, 81)
+extra_step(132, 81)
+extra_step(131, 81)
+extra_step(131, 82)
+extra_step(131, 83)
+extra_step(131, 84)
+extra_step(131, 85)
+extra_step(132, 85)
+extra_step(133, 85)
+extra_step(133, 84)
+extra_step(133, 83)
+extra_step(134, 83)
+extra_step(135, 83)
+extra_step(135, 84)
+extra_step(135, 85)
+extra_step(135, 86)
+extra_step(135, 87)
+extra_step(135, 88)
+extra_step(135, 89)
+extra_step(136, 89)
+
+extra_step(18, 139)
+extra_step(19, 139)
+extra_step(20, 139)
+extra_step(21, 136)
+extra_step(21, 137)
+extra_step(21, 138)
+extra_step(21, 139)
+extra_step(22, 139)
+extra_step(23, 136)
+extra_step(23, 137)
+extra_step(23, 138)
+extra_step(23, 139)
+
 printf @maze.map(&:join).join("\n") + "\n"
 p "P1: #{lowest_cost}"
+p "P2: #{469 + @extras}"
 
 # P1: 107468
+# P2: 500 too low
