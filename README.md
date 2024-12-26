@@ -8,7 +8,7 @@ https://adventofcode.com/2024
 |--------|------------|-----|------------|:------:|:----:|:------:|:---:|:--:|:-----:|
 | [Day 1: Historian Hysteria](https://adventofcode.com/2024/day/1) | 1 | 2 | :star: :star: | - | - | :heart_decoration: **[01.ex](elixir/01.ex)** | - | - | :registered: [01.rs](rust/01.rs) |
 | [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2) | 2 | 2 | :star: :star: | - | - | :heart_decoration: **[02.ex](elixir/02.ex)** | - | - | :registered: [02.rs](rust/02.rs) |
-| [Day 3: Mull It Over](https://adventofcode.com/2024/day/3) | 3 | 2 | :star: :star: | - | - | :heart_decoration: **[03.ex](elixir/03.ex)** | - | - | - |
+| [Day 3: Mull It Over](https://adventofcode.com/2024/day/3) | 3 | 2 | :star: :star: | - | - | :heart_decoration: **[03.ex](elixir/03.ex)** | :elephant: [03.php](php/03.php) | - | - |
 | [Day 4: Ceres Search](https://adventofcode.com/2024/day/4) | 1 | 3 | :star: :star: | :snake: **[04.py](python/04.py)** | - | - | - | - | :registered: [04.rs](rust/04.rs) |
 | [Day 5: Print Queue](https://adventofcode.com/2024/day/5) | 3 | 2 | :star: :star: | :snake: **[05.py](python/05.py)** | - | - | - | - | - |
 | [Day 6: Guard Gallivant](https://adventofcode.com/2024/day/6) | 3 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[06.js](js/06.js)** | - |
@@ -30,7 +30,7 @@ https://adventofcode.com/2024
 | [Day 22: Monkey Market](https://adventofcode.com/2024/day/22) | 4 | 4 | :star: :star: | - | - | :heart_decoration: **[22.ex](elixir/22.ex)** | - | - | - |
 | [Day 23: LAN Party](https://adventofcode.com/2024/day/23) | 4 | 3 | :star: :star: | - | :rotating_light: **[23.rb](ruby/23.rb)** | -| - | - | - |
 | [Day 24: Crossed Wires](https://adventofcode.com/2024/day/24) | 4 | 5 | :star: :star: | - | - | -| - | :jack_o_lantern: **[24.js](js/24.js)** | - |
-| [Day 25: Code Chronicle](https://adventofcode.com/2024/day/25) | 1 | 3 | :star: | :snake: **[25.py](python/25.py)** | - | - | - | - | - |
+| [Day 25: Code Chronicle](https://adventofcode.com/2024/day/25) | 1 | 3 | :star: :star: | :snake: **[25.py](python/25.py)** | - | - | - | - | - |
 
 _**Bold** = primary language for that day (others are ports)_
 
