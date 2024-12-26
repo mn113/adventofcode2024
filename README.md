@@ -1,6 +1,6 @@
 # Advent of Code 2024
 
-![](https://img.shields.io/badge/days%20completed-23-red) ![](https://img.shields.io/badge/stars%20⭐-47-yellow)
+![](https://img.shields.io/badge/days%20completed-24-red) ![](https://img.shields.io/badge/stars%20⭐-48-yellow)
 
 https://adventofcode.com/2024
 
@@ -26,7 +26,7 @@ https://adventofcode.com/2024
 | [Day 18: RAM Run](https://adventofcode.com/2024/day/18) | 2 | 3 | :star: :star: | :snake: **[18.py](python/18.py)** |  - | - | - | - | - |
 | [Day 19: Linen Layout](https://adventofcode.com/2024/day/19) | 3 | 3 | :star: :star: | :snake: **[19.py](python/19.py)** |  - | - | - | - | - |
 | [Day 20: Race Condition](https://adventofcode.com/2024/day/20) | 3 | 4 | :star: :star: | :snake: **[20.py](python/20.py)** |  - | - | - | - | - |
-| [Day 21: Keypad Conundrum](https://adventofcode.com/2024/day/21) | 5 | 4 | :star: | - | - | - | - | :jack_o_lantern: **[21.js](js/21.js)** | - |
+| [Day 21: Keypad Conundrum](https://adventofcode.com/2024/day/21) | 5 | 4 | :star: :star: | - | - | - | - | :jack_o_lantern: **[21.js](js/21.js)** | - |
 | [Day 22: Monkey Market](https://adventofcode.com/2024/day/22) | 4 | 4 | :star: :star: | - | - | :heart_decoration: **[22.ex](elixir/22.ex)** | - | - | - |
 | [Day 23: LAN Party](https://adventofcode.com/2024/day/23) | 4 | 3 | :star: :star: | - | :rotating_light: **[23.rb](ruby/23.rb)** | -| - | - | - |
 | [Day 24: Crossed Wires](https://adventofcode.com/2024/day/24) | 4 | 5 | :star: :star: | - | - | -| - | :jack_o_lantern: **[24.js](js/24.js)** | - |
