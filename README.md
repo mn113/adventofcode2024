@@ -15,7 +15,7 @@ https://adventofcode.com/2024
 | [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7) | 2 | 3 | :star: :star: | - | - | :heart_decoration: **[07.ex](elixir/07.ex)** | - | - | - |
 | [Day 8: Resonant Collinearity](https://adventofcode.com/2024/day/8) | 1 | 2 | :star: :star: | :snake: **[08.py](python/08.py)** | - | - | - | - | :registered: [08.rs](rust/08.rs) |
 | [Day 9: Disk Fragmenter](https://adventofcode.com/2024/day/9) | 4 | 2 | :star: :star: | :snake: **[09.py](python/09.py)** | - | - | - | - | - |
-| [Day 10: Hoof It](https://adventofcode.com/2024/day/10) | 2 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[10.js](js/10.js)** | - |
+| [Day 10: Hoof It](https://adventofcode.com/2024/day/10) | 2 | 3 | :star: :star: | - | - | - | :elephant: [10.php](php/10.php) | :jack_o_lantern: **[10.js](js/10.js)** | - |
 | [Day 11: Plutonian Pebbles](https://adventofcode.com/2024/day/11) | 3 | 3 | :star: :star: | - | - | :heart_decoration: **[11.ex](elixir/11.ex)** | - | - | - |
 | [Day 12: Garden Groups](https://adventofcode.com/2024/day/12) | 4 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[12.js](js/12.js)** | - |
 | [Day 13: Claw Contraption](https://adventofcode.com/2024/day/13) | 3 | 3 | :star: :star: | - | :rotating_light: **[13.rb](ruby/13.rb)** | - | - | - | :registered: [13.rs](rust/13.rs) |

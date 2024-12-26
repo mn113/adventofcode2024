@@ -35,7 +35,8 @@ function re_parse($line)
 }
 
 # Sum the sums of products of the lines after parsing out the "mul(\d,\d)" substrings
-function part1() {
+function part1()
+{
     $mapped_matches = re_parse(read_input());
     $products = array_map(function ($match) {
         return array_reduce($match, function ($acc, $x) {
@@ -49,7 +50,8 @@ function part1() {
 }
 
 # Sum the sums of products of the lines taking into account the "mul(\d,\d)", "do()", and "don't()" substrings
-function part2() {
+function part2()
+{
     $tracker = ["value" => 0, "counting" => true];
 
     $mapped_matches = re_parse(read_input());
