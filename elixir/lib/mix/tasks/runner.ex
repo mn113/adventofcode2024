@@ -4,7 +4,7 @@ defmodule Mix.Tasks.Runner do
   @shortdoc "Runs both solution parts for a given day"
   def run(args \\ []) do
     day = Enum.at(args, 0)
-    case day do
+    case String.trim_leading(day, "0") do
       "1" ->
         AOC.Day01.part1()
         AOC.Day01.part2()
@@ -13,7 +13,7 @@ defmodule Mix.Tasks.Runner do
         AOC.Day02.part2()
       "3" ->
         AOC.Day03.part1()
-        AOC.Day03.part2()
+        # AOC.Day03.part2()
       "7" ->
         AOC.Day07.part1()
         AOC.Day07.part2()
