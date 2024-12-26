@@ -1,6 +1,6 @@
 # Advent of Code 2024
 
-![](https://img.shields.io/badge/days%20completed-24-red) ![](https://img.shields.io/badge/stars%20⭐-48-yellow)
+![](https://img.shields.io/badge/days%20completed-25-red) ![](https://img.shields.io/badge/stars%20⭐-50-yellow)
 
 https://adventofcode.com/2024
 
@@ -22,7 +22,7 @@ https://adventofcode.com/2024
 | [Day 14: Restroom Redoubt](https://adventofcode.com/2024/day/14) | 2 | 2 | :star: :star: | :snake: **[14.py](python/14.py)** | - | - | - | - | - |
 | [Day 15: Warehouse Woes](https://adventofcode.com/2024/day/15) | 4 | 3 | :star: :star: | - | :rotating_light: **[15.rb](ruby/15.rb)** | - | - | - | - |
 | [Day 16: Reindeer Maze](https://adventofcode.com/2024/day/16) | 5 | 1 | :star: :star: | - | :rotating_light: **[16.rb](ruby/16.rb)** | - | - | - | - |
-| [Day 17: Chronospatial Computer](https://adventofcode.com/2024/day/17) | 4 | 3 | :star: | - |  - | :heart_decoration: **[17.ex](elixir/17.ex)** | - | - | - |
+| [Day 17: Chronospatial Computer](https://adventofcode.com/2024/day/17) | 4 | 4 | :star: :star: | - |  - | :heart_decoration: **[17.ex](elixir/17.ex)** | - | - | - |
 | [Day 18: RAM Run](https://adventofcode.com/2024/day/18) | 2 | 3 | :star: :star: | :snake: **[18.py](python/18.py)** |  - | - | - | - | - |
 | [Day 19: Linen Layout](https://adventofcode.com/2024/day/19) | 3 | 3 | :star: :star: | :snake: **[19.py](python/19.py)** |  - | - | - | - | - |
 | [Day 20: Race Condition](https://adventofcode.com/2024/day/20) | 3 | 4 | :star: :star: | :snake: **[20.py](python/20.py)** |  - | - | - | - | - |

@@ -97,7 +97,6 @@ defmodule AOC.Day17 do
   defp process_program(program, pointer, registers, outputs \\ []) do
     # halt condition: for a program of length 6, highest valid pointer is index 4
     if pointer > length(program) - 2 do
-      #IO.inspect(outputs, label: "done") # never reached!
       outputs
     else
       # The first 2 values after the pointer are the opcode and the literal operand
@@ -105,7 +104,6 @@ defmodule AOC.Day17 do
       literal_operand = Enum.at(program, pointer + 1)
 
       {new_output, new_registers} = process_opcode(opcode, literal_operand, registers)
-      #IO.inspect([pointer, opcode, literal_operand, new_output, new_registers, outputs], label: "ptr, opcode, literal, output, regs, outputs")
 
       # go again
       regA = elem(registers, 0)
@@ -134,13 +132,56 @@ defmodule AOC.Day17 do
     |> IO.inspect(label: "P1")
   end
 
+  defp build_decimal_value_from_base8_digits(digits) do
+    Enum.reduce(digits, 0, fn digit, acc -> acc * 8 + digit end)
+  end
+
+  # Use BFS to get the required input digits one by one
+  defp find_input_digits(target_output_digits) do
+    do_find_input_digits(target_output_digits, [{[], 0}], [], [])
+  end
+
+  # Recursive BFS loop
+  defp do_find_input_digits(_, [], _, found), do: found
+  defp do_find_input_digits(target_output_digits, queue, seen, found) do
+    [current | queue2] = queue
+    seen2 = [current | seen]
+    {current_b8_digits, current_b10_value} = current
+
+    found2 = if target_output_digits == process_program(target_output_digits, 0, {current_b10_value, 0, 0}) do
+      found ++ [current]
+    else
+      found
+    end
+
+    nexts = (0..7)
+    |> Enum.map(fn new_digit ->
+      next_digits = current_b8_digits ++ [new_digit]
+      {next_digits, build_decimal_value_from_base8_digits(next_digits)}
+    end)
+    |> Enum.filter(fn {_next_digits, next_value}->
+        result = process_program(target_output_digits, 0, {next_value, 0, 0})
+        # match on growing slice of digits from the back
+        Enum.take(Enum.reverse(result), length(current_b8_digits) + 1) == Enum.take(Enum.reverse(target_output_digits), length(current_b8_digits) + 1)
+    end)
+
+    queue2 = Enum.concat(queue2, nexts)
+    do_find_input_digits(target_output_digits, queue2, seen2, found2)
+  end
+
   @doc """
-  Find the initial regA value which outputs the input
+  Find the initial regA value which outputs the input (the program is thereby a "quine")
   """
   def part2 do
     read_input()
+    |> then(fn [_regA, _regB, _regC, program] ->
+      find_input_digits(program)
+      |> Enum.map(&elem(&1, 1))
+      |> Enum.min
+      |> IO.inspect(label: "P2", limit: :infinity)
+    end)
   end
 end
 
 # P1: 1,3,5,1,7,2,5,1,6
-# P2:
+# P2: 236555997372013
