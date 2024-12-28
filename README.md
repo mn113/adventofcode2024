@@ -10,7 +10,7 @@ https://adventofcode.com/2024
 | [Day 2: Red-Nosed Reports](https://adventofcode.com/2024/day/2) | 2 | 2 | :star: :star: | - | - | :heart_decoration: **[02.ex](elixir/02.ex)** | - | - | :registered: [02.rs](rust/02.rs) |
 | [Day 3: Mull It Over](https://adventofcode.com/2024/day/3) | 3 | 2 | :star: :star: | - | - | :heart_decoration: **[03.ex](elixir/03.ex)** | :elephant: [03.php](php/03.php) | - | - |
 | [Day 4: Ceres Search](https://adventofcode.com/2024/day/4) | 1 | 3 | :star: :star: | :snake: **[04.py](python/04.py)** | - | - | - | - | :registered: [04.rs](rust/04.rs) |
-| [Day 5: Print Queue](https://adventofcode.com/2024/day/5) | 3 | 2 | :star: :star: | :snake: **[05.py](python/05.py)** | - | - | - | - | - |
+| [Day 5: Print Queue](https://adventofcode.com/2024/day/5) | 3 | 2 | :star: :star: | :snake: **[05.py](python/05.py)** | - | - | - | - | :registered: [05.rs](rust/05.rs) |
 | [Day 6: Guard Gallivant](https://adventofcode.com/2024/day/6) | 3 | 3 | :star: :star: | - | - | - | - | :jack_o_lantern: **[06.js](js/06.js)** | - |
 | [Day 7: Bridge Repair](https://adventofcode.com/2024/day/7) | 2 | 3 | :star: :star: | - | - | :heart_decoration: **[07.ex](elixir/07.ex)** | - | - | - |
 | [Day 8: Resonant Collinearity](https://adventofcode.com/2024/day/8) | 1 | 2 | :star: :star: | :snake: **[08.py](python/08.py)** | - | - | - | - | :registered: [08.rs](rust/08.rs) |
@@ -67,7 +67,7 @@ python3 12.py
 
 ## PHP
 
-> PHP Version: 7.3
+> PHP Version: 8.3
 
 Run a solution
 
